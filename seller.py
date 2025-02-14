@@ -235,7 +235,8 @@ def create_prices(watch_remnants, offer_ids):
 
     Example:
         >>> create_prices([{'Код': '123', 'Цена': '5\'990.00 руб.'}], ['123', '124'])
-        [{'auto_action_enabled': 'UNKNOWN', 'currency_code': 'RUB', 'offer_id': '123', 'old_price': '0', 'price': '5990'}]
+        [{'auto_action_enabled': 'UNKNOWN', 'currency_code': 'RUB',
+        'offer_id': '123', 'old_price': '0', 'price': '5990'}]
     """    
     prices = []
     for watch in watch_remnants:
